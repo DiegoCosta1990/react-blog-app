@@ -4,7 +4,7 @@ import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles((theme) => ({
     hero: {
-        backgroundImage: "url('https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80')",
+        backgroundImage: "url('https://images.unsplash.com/photo-1511184150666-9bb7d41a88f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')",
         backgroundPosition:"center",
         backgroundRepeat:"no-repeat",
         backgroundSize:"cover",
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         height: "90vh", 
         alignItems:"center",
         color: "black",
-        fontSize: "4rem",
+        fontSize: "3.5rem",
         paddingBottom: "5rem",
 
     }
@@ -27,7 +27,10 @@ function HeroImage() {
     return(
         <Box className={classes.hero}>
             <Box>
-                Blog Build in React.js and Material UI
+                Welcome to my demostration website!
+                <Box>
+                    Built with React.js and Material-UI
+                </Box>
             </Box>
 
         </Box>

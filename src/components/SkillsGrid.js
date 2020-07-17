@@ -12,7 +12,12 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 500
+    maxWidth: 400,
+    maxHeight: 550,
+    display: 'inline-block',
+    justifyContent: 'center',
+    marginBottom:"20px",
+    overflow: 'hidden'
   },
   cardCenter: {
       display: 'flex',
@@ -24,11 +29,8 @@ const useStyles = makeStyles({
   },
   title: {
       padding: "50px",
-      boxShadow: "10px 10px 1000px grey",
-      backgroundImage:"url('https://images.unsplash.com/photo-1531256379416-9f000e90aacc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat"
+
+      fontStyle:'italic'
     }
 });
 
@@ -37,11 +39,11 @@ function SkillsGrid() {
 
   return (
     <>       
-    <Typography variant="h2" component="h2" gutterBottom className={classes.title}>
+    <Typography variant="h3" component="h2" gutterBottom className={classes.title}>
          Skills applied
     </Typography>
     <Grid container>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={12} md={6} lg={4}>
             <Card className={classes.root}>
             <CardActionArea>
                 <CardMedia
@@ -71,7 +73,7 @@ function SkillsGrid() {
             </CardActions>
             </Card>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={12} md={6} lg={4}>
             <Card className={classes.root}>
             <CardActionArea>
                 <CardMedia
@@ -88,7 +90,7 @@ function SkillsGrid() {
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                 Material-UI is an open-source project that features React components 
-                that implement Google’s Material Design and is one of the top user interface libraries for React out there.
+                that implement Google’s Material Design and is in the top user interface libraries for React out there.
                 </Typography>
                 </CardContent>
             </CardActionArea>
@@ -101,7 +103,7 @@ function SkillsGrid() {
             </CardActions>
             </Card>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={12} md={6} lg={4}>
             <Card className={classes.root}>
             <CardActionArea>
                 <CardMedia
@@ -118,7 +120,7 @@ function SkillsGrid() {
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                 Git is a version control system, a command-line tool, but the center around which all things
-                involving Git revolve is the hub — <a href="https://github.com">GitHub.com</a> — where developers store their projects and network with others.
+                involving Git revolve is the hub where developers store their projects and network with others.
                 </Typography>
                 </CardContent>
             </CardActionArea>

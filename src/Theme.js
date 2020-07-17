@@ -3,11 +3,11 @@ const { createMuiTheme } = require("@material-ui/core");
 const theme = createMuiTheme({
     pallette:{
         primary: {
-            main: "black"
+            main: "white"
         }
     },
     background:{
-        default:"black"
+        default:"grey"
     }
 })
 

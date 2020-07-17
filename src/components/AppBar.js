@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     fontStyle:'italic',
     display:'flex',
-    justifyContent:'left'
+    justifyContent:'center'
   },
   AppBar:{
       backgroundColor:"transparent",
@@ -34,9 +35,8 @@ export default function ButtonAppBar() {
       <AppBar className={classes.AppBar} position="fixed">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            React Blog App
+            Diego Costa React/Material-UI
           </Typography>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </div>
