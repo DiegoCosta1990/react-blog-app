@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         height: "90vh", 
         alignItems:"center",
         color: "black",
-        fontSize: "3.5rem",
+        fontSize: "3.2rem",
         paddingBottom: "5rem",
 
     }
@@ -27,7 +27,7 @@ function HeroImage() {
     return(
         <Box className={classes.hero}>
             <Box>
-                Welcome to my demostration website!
+                Welcome to my website!
                 <Box>
                     Built with React.js and Material-UI
                 </Box>
