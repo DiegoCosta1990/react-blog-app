@@ -81,7 +81,7 @@ function SkillsGrid() {
                 component="img"
                 alt="Material-ui"
                 height="300"
-                image="https://www.iconspng.com/uploads/material-ui-logo.png"
+                image="https://material-ui.com/static/logo_raw.svg"
                 title="Material-ui"
                 />
                 <CardContent>
